@@ -32,7 +32,7 @@ jobs:
 
       # Build
       - name: Build project
-        uses: webbertakken/unity-builder@v1.5
+        uses: webbertakken/unity-builder@v2.0-alpha-3
         with:
           unityVersion: 2020.1.3f1
           targetPlatform: WebGL
