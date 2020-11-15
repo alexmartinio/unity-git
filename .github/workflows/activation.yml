@@ -17,5 +17,3 @@ jobs:
         with:
           name: ${{ steps.getManualLicenseFile.outputs.filePath }}
           path: ${{ steps.getManualLicenseFile.outputs.filePath }}
-- name: Unity - Request Activation File
-  uses: webbertakken/unity-request-activation-file@v2.0-alpha-1
