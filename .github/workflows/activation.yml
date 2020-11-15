@@ -6,7 +6,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       # Request manual activation file
-      - name: Request manual activation file
+      - name: Unity - Request Activation File
         id: getManualLicenseFile
         uses: webbertakken/unity-request-activation-file@v2.0-alpha-1
         with:
@@ -17,3 +17,5 @@ jobs:
         with:
           name: ${{ steps.getManualLicenseFile.outputs.filePath }}
           path: ${{ steps.getManualLicenseFile.outputs.filePath }}
+- name: Unity - Request Activation File
+  uses: webbertakken/unity-request-activation-file@v2.0-alpha-1
