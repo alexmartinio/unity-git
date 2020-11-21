@@ -44,7 +44,7 @@ jobs:
             Library-${{ matrix.projectPath }}-
             Library-
 
-      - uses: webbertakken/unity-builder
+      - uses: webbertakken/unity-builder@latest
         with:
           projectPath: ${{ matrix.projectPath }}
           unityVersion: ${{ matrix.unityVersion }}
